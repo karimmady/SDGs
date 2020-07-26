@@ -22,6 +22,7 @@ export class ProjectsHomeComponent implements OnInit {
   Locations = [];
   Resources = [];
   projects = [];
+  filterArgs = {"aim":""}; 
   constructor(private fb: FormBuilder, private ProjectService: ProjectService, private sdgsService: SDGsService,
               private locationsService: LocationsService,
               private resourcesService: ResourcesService,
