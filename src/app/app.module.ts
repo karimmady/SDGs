@@ -22,6 +22,7 @@ import { AdminNavBarComponent } from './admin/admin-nav-bar/admin-nav-bar.compon
 import { ChartsModule } from 'ng2-charts';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminsComponent } from './admin/admins/admins.component';
 
 
 registerLocaleData(en);
@@ -39,7 +40,8 @@ registerLocaleData(en);
     ProjectDetailsComponent,
     AdminHomeComponent,
     AdminNavBarComponent,
-    FilterPipe
+    FilterPipe,
+    AdminsComponent
 
   ],
   imports: [
