@@ -85,5 +85,24 @@
         <nz-option *ngFor="let option of listOfLocations" [nzLabel]="option.area" [nzValue]="option.id"></nz-option>
       </nz-select>
     </nz-form-item>
+    <nz-form-item class="radio-group-wrapper">
+      <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired>Access Rights</nz-form-label>
+      <nz-radio-group [(ngModel)]="radioValue" [ngModelOptions]="{ standalone: true }">
+        <label nz-radio nzValue="Private Sectors">Private Sectors</label>
+        <label nz-radio nzValue="NGOs">NGOs</label>
+        <label nz-radio nzValue="Specific">Specific</label>
+        <label nz-radio nzValue="All">All</label>
+      </nz-radio-group>
+    </nz-form-item>
+    <div class="select-wrapper" *ngIf="radioValue == 'Specific'">
+      <nz-select style="max-width: 40%; margin-right: 2%;" nzMode="multiple" nzPlaceHolder="Private Sectors" [(ngModel)]="selectedPrivateSectors"
+        [ngModelOptions]="{ standalone: true }">
+        <nz-option *ngFor="let ps of privateSectors" [nzLabel]="ps.name" [nzValue]="ps.name"></nz-option>
+      </nz-select>
+      <nz-select style="max-width: 40%;" nzMode="multiple" nzPlaceHolder="NGOs" [(ngModel)]="selectedNGOs"
+        [ngModelOptions]="{ standalone: true }">
+        <nz-option *ngFor="let ngo of ngos" [nzLabel]="ngo.name" [nzValue]="ngo.name"></nz-option>
+      </nz-select>
+    </div>
   </form>
 </nz-modal>
