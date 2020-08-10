@@ -23,6 +23,9 @@ import { ChartsModule } from 'ng2-charts';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { FilterPipe } from './pipe/filter.pipe';
 import { AdminsComponent } from './admin/admins/admins.component';
+import { SignupRequestsComponent } from './admin/signup-requests/signup-requests.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+
 
 
 registerLocaleData(en);
@@ -41,7 +44,9 @@ registerLocaleData(en);
     AdminHomeComponent,
     AdminNavBarComponent,
     FilterPipe,
-    AdminsComponent
+    AdminsComponent,
+    SignupRequestsComponent,
+    UnauthorizedComponent
 
   ],
   imports: [

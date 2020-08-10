@@ -19,4 +19,8 @@ export class AdminNavBarComponent implements OnInit {
   routeToAdmins(){
     this.router.navigate(["admin/admins"])
   }
+
+  routeToSignupRequests() {
+    this.router.navigate(['admin/signup-requests']);
+  }
 }
