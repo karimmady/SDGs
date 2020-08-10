@@ -23,6 +23,8 @@ import { ChartsModule } from 'ng2-charts';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { FilterPipe } from './pipe/filter.pipe';
 import { AdminsComponent } from './admin/admins/admins.component';
+import { HomeForumComponent } from './forum/home-forum/home-forum.component';
+import { ForumQuestionComponent } from './forum/forum-question/forum-question.component';
 
 
 registerLocaleData(en);
@@ -41,7 +43,9 @@ registerLocaleData(en);
     AdminHomeComponent,
     AdminNavBarComponent,
     FilterPipe,
-    AdminsComponent
+    AdminsComponent,
+    HomeForumComponent,
+    ForumQuestionComponent
 
   ],
   imports: [

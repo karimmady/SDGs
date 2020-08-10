@@ -9,6 +9,8 @@ import { NgoProfileComponent } from './ngo/ngo-profile/ngo-profile.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component'
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { AdminsComponent } from './admin/admins/admins.component';
+import { HomeForumComponent } from './forum/home-forum/home-forum.component';
+import { ForumQuestionComponent } from './forum/forum-question/forum-question.component';
 
 
 
@@ -49,6 +51,15 @@ const routes: Routes = [
     path: 'admin/admins',
     component: AdminsComponent
   },
+  {
+    path: 'forum/home',
+    component: HomeForumComponent
+  },
+  {
+    path: 'forum/question',
+    component: ForumQuestionComponent
+  },
+  
 ];
 
 @NgModule({
